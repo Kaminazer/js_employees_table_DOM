@@ -93,8 +93,7 @@ function createInputField(labelText, type, fieldName, qa, options = {}) {
   const input = document.createElement('input');
 
   input.type = type;
-  input.name = fieldName; // ✅ ЗМІНЕНО
-  input.required = true;
+  input.name = fieldName;
   input.dataset.qa = qa;
 
   Object.assign(input, options);
